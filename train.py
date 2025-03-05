@@ -51,7 +51,7 @@ if __name__=="__main__":
     model = Alexnet.Alexnet()
 
     #保存的方式
-    checkpoint = ModelCheckpoint(filepath= log_dir + 'ep{epoch:03d}-loss{loss:.3f}-val-loss{val_loss.3f}.h5',
+    checkpoint = ModelCheckpoint(filepath= log_dir + 'ep{epoch:03d}-loss{loss:.3f}-val-loss{val_loss:.3f}.h5',
                                  monitor='acc',
                                  save_best_only=True,
                                  save_weights_only=True,
